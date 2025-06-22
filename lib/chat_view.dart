@@ -7,16 +7,25 @@ class ChatView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text("Chats"),
+        title: Text("Chats", style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
-            icon: Icon(Icons.camera_alt),
+            icon: Icon(
+              Icons.camera_alt,
+              color: Colors.white,
+            ),
             onPressed: () {},
           ),
-          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ))
         ],
-        backgroundColor: const Color.fromARGB(255, 1, 163, 55),
+        backgroundColor: const Color.fromARGB(255, 0, 0, 0),
       ),
       body: Column(
         children: [

@@ -3,11 +3,17 @@ import 'package:flutter/material.dart';
 Widget CustomChatTile(color, title, msg, icon, time) {
   return ListTile(
     leading: CircleAvatar(
-      backgroundColor: color,
+      backgroundImage: AssetImage('assets/images/images.png'),
     ),
-    title: Text("$title"),
-    subtitle: Text("$msg"),
-    tileColor: Colors.black12,
+    title: Text(
+      "$title",
+      style: TextStyle(color: Colors.white),
+    ),
+    subtitle: Text(
+      "$msg",
+      style: TextStyle(color: Colors.white),
+    ),
+    tileColor: const Color.fromARGB(255, 15, 14, 14),
     trailing: Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
